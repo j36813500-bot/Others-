@@ -289,8 +289,8 @@ body{font-family:'Tajawal',sans-serif;color:#f0e8ff;}
     <img id="lb-img" src="" alt=""><div id="lb-cap"></div>
   </div>
   <div class="site-inner">
-    <section class="hero">  
-    <div class="hero-eyebrow">✦ &nbsp; حكاية بدأت من 2023 يا وردتي &nbsp; ✦</div>
+    <section class="hero">
+      <div class="hero-eyebrow">✦ &nbsp; حكاية بدأت منذ 1 يوليو 2023 يا نور &nbsp; ✦</div>
       <h1 class="hero-title" data-text="جمال نور">جمال نور</h1>
       <p class="hero-subtitle">قصة إبهار عابرة للزمان والمكان 🌹</p>
       <div class="counter-row">
@@ -300,18 +300,18 @@ body{font-family:'Tajawal',sans-serif;color:#f0e8ff;}
       </div>
       <div class="scroll-cue"><span>شوفي الجمال السينمائي</span><div class="scroll-arrow"></div></div>
     </section>
-    <div class="sec-header">  
-    <h2>عشرين طلّة تزلزل الكيان</h2>
-      <p>·   لكل لحظة يا نور عيوني 💐💖</p>
+    <div class="sec-header">
+      <h2>عشرين طلّة تزلزل الكيان</h2>
+      <p>· خلفيات سينمائية متغيرة وساحرة لكل لحظة يا نور 💐💖</p>
       <div class="orn-line"><span>✦</span></div>
     </div>
     <div class="photos-grid" id="photosGrid"></div>
   </div>
 </div>
 
-<!-- أغنية الخلفية -->
+<!-- أغنية الخلفية (رابط مباشر وثابت لضمان العمل على الاستضافات) -->
 <audio id="bgMusic" loop preload="auto">
-  <source src="song.mp3" type="audio/mpeg">
+  <source src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf756.mp3?filename=romantic-guitars-112177.mp3" type="audio/mpeg">
 </audio>
 
 <!-- ══ MUSIC PLAYER ══ -->
@@ -328,7 +328,7 @@ body{font-family:'Tajawal',sans-serif;color:#f0e8ff;}
 
 <script>
 const INTRO_IMAGE = 'intro.jpg'; 
-const START_DATE  = '2023-07-01'; // تاريخ بداية المعرفة بدقة من 2023/7/1
+const START_DATE  = '2023-07-01';
 
 const PHOTO_CAPTIONS = [
   'يا نور.. ده انتي لما بتطلّي، البدر يداري من جمالك ويستخبى 🌸💖',
@@ -353,7 +353,6 @@ const PHOTO_CAPTIONS = [
   'يا نور.. انتي عنوان الجمال الفاخر والطلّة اللي ما تتكررش أبداً 🌸🌷'
 ];
 
-/* ثيمات ألوان سينمائية متغيرة لكل كارت صورة لتبدو مذهلة ومتحركة */
 const CINEMATIC_THEMES = [
   {col1: 'rgba(201,169,110,0.35)', col2: 'rgba(232,130,154,0.25)'},
   {col1: 'rgba(120,40,200,0.35)', col2: 'rgba(0,120,255,0.25)'},
@@ -377,7 +376,6 @@ const CINEMATIC_THEMES = [
   {col1: 'rgba(201,169,110,0.4)', col2: 'rgba(142,68,173,0.3)'}
 ];
 
-/* ══ INTRO CANVAS ══ */
 const IC  = document.getElementById('introCanvas');
 const ictx = IC.getContext('2d');
 let IW, IH;
@@ -459,7 +457,7 @@ const vx = new Float32Array(STAR_COUNT);
 const vy = new Float32Array(STAR_COUNT);
 
 const phrases = [
-  'يا نور.. انتي طلّتك تزلزل الحجر من جمالها… 🌸✨',
+  'يا نور.. انتي طلّتك تزلزل الحجر من جمالها منذ عام 2023… 🌸✨',
   'الكون كله بيوقف احتراماً لما انتي تطلّي في كل لحظة… 🌹💖',
   'جمالكِ لوحده حكاية تملى العين يا نور وتخلد الذكرى… 💐💫',
 ];
@@ -592,7 +590,6 @@ function enterSite() {
   }, 1600);
 }
 
-/* ═══ UNIVERSE ═══ */
 const cvs = document.getElementById('universeCanvas');
 const ctx = cvs.getContext('2d');
 let W, H, s3 = [], mx = 0, my = 0, cx2 = 0, cy2 = 0;
@@ -743,7 +740,6 @@ function closeLb(){document.getElementById('lb').classList.remove('open');}
 document.getElementById('lb').addEventListener('click',e=>{if(e.target===document.getElementById('lb'))closeLb();});
 window.closeLb=closeLb;
 
-/* ══ MUSIC CONTROLS ══ */
 let musicPlaying = false;
 const bgMusic = document.getElementById('bgMusic');
 
@@ -770,3 +766,4 @@ buildGrid();
 </script>
 </body>
 </html>
+
